@@ -1,0 +1,12 @@
+name: Test workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  first-job:
+    name: The first and only job
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo something
+        run: echo This is only a test
